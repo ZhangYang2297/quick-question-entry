@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2f6bff" />
+  <title>快速录题</title>
+  <!-- 资源用「版本化相对路径」：__STATIC_V__ 由后端按文件内容指纹替换。
+       内容一变 URL 就变，浏览器旧缓存（哪怕是坏的）永远不会被再次请求。
+       注意本页面必须经后端服务打开（分享链接或 python -m qqe serve），
+       直接双击 file:// 打开会因 ES 模块 CORS 限制与 /api 不可达而空白。 -->
+  <link rel="icon" href="static/__STATIC_V__/favicon.svg" />
+  <link rel="stylesheet" href="static/__STATIC_V__/css/app.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <noscript>本应用需要启用 JavaScript。</noscript>
+  </div>
+  <div id="overlay-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+  <!-- 云服务 SDK：同源自托管（固定 0.1.4 稳定版）。
+       不走公共 CDN：jsdelivr 在国内网络不稳定，且网关会话失效时静态请求
+       会返回 403 HTML，被浏览器当 JS 解析报 SyntaxError。
+       加载失败时应用降级为纯本地模式。 -->
+  <script type="module" src="static/__STATIC_V__/js/app.js"></script>
+</body>
+</html>
